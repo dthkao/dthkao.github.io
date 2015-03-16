@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 body { 
-    background-color: #202024;
+    background-color: #ffffff;
     font-family: 'Quattrocento', serif;
     font-size: 14px;
     color: rgba(32,32,48,0.9);
@@ -49,17 +49,17 @@ p {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 40px;    
-    border-left: 1px #ee6699 solid;
+    border-left: 0px #ee6699 solid;
     min-width: 470px;
     max-width: 960px;
-    background-color: #ffffff;
+    background-color: #f8f8fa;
     background-size: 20px 20px;            
     background-image:
-repeating-linear-gradient(0deg, rgba(180, 210, 255, .5), rgba(180, 210, 255, .5) 1px, transparent 2px, transparent 20px),
+repeating-linear-gradient(180deg, rgba(180, 210, 255, .5), rgba(180, 210, 255, .5) 1px, transparent 2px, transparent 20px),
 repeating-linear-gradient(90deg, transparent 0px, transparent 9px, rgba(180, 210, 255, .5) 9px, rgba(180, 210, 255, .5) 10px, transparent 11px, transparent 20px); 
-    -moz-box-shadow: 4px 4px 3px #111;
-    -webkit-box-shadow: 4px 4px 3px #111;
-    box-shadow: 4px 4px 3px #111;}
+    -moz-box-shadow: 1px 1px 5px #111;
+    -webkit-box-shadow: 1px 1px 5px #111;
+    box-shadow: 1px 1px 5px #111;}
 
 #bio img {
     margin-left: 0px; 
