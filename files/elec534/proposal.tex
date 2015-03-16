@@ -1,0 +1,54 @@
+% ELEC 534 Group Project Proposal -- 10/20/2006
+% Will Howison, Jeanne Guillory, David T. Kao, Brett Kaufman 
+% Presentation/Project Outline:
+%  Introduction
+%  -Objective of coding / History
+%  -Basic overview of source vs. channel coding
+%  -Terminology and tools (lin algebra and graphs)
+%
+%  LDPC
+%  -Similar Codes (Parity Check, Turbo), Pros & Cons
+%  -Encoding
+%  -Decoding Algorithms
+%    -Belief Propagation
+%    -Sum-Product
+%  -Design Methods
+%    -Other Methods
+%    -EXIT Charts
+%     -Basics, Uses, & Applications
+%     -EX1/ Binary Erasure Channel
+%     -EX2/ Binary Symmetric Channel
+%     -EX3/ ????
+%
+%  Summary/Conclusions
+
+\documentclass[11pt]{article}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage[dvipdfm]{graphicx}
+\usepackage{fullpage}
+\oddsidemargin  0.25in
+\evensidemargin 0.25in
+\textwidth      6.0in
+\topmargin      0.0in
+\textheight	9.0in
+
+\begin{document}
+\title{Decoding LDPC}
+\author{An ELEC 534 Project Proposal\\Will Howison, Jeanne Guillory, David Kao, Brett Kaufman }
+\date{October 20th, 2006}
+\maketitle	% Produces the title.
+
+\thispagestyle{empty}
+In 1948 with the formal establishment of information theory, Claude Shannon issued a challenge to the telecommunications research community that, astonishingly, to this day remains unanswered. Shannon's mathematical method of deducing the capacity of a channel, the absolute limit to the rate of reliable transmission, was the catalyst for an explosion in information representation and transmission research (a field known as coding theory) analogous to the medieval quest for the holy grail. Only in the past two decade have we even begun to make significant steps towards achieving Shannon's limit with the creation of turbo codes\cite{BerGlaThi1993}, the consequent resurgence of Gallager or Low Density Parity Check (LDPC) codes\cite{Mackay1999}, and the discovery of a number of graph-based approaches to code design and analysis.
+
+LDPC codes are quickly becoming the method of choice in a number of applications largely due to astonishing results producing practical methods attaining rates near the Shannon limit as well as the current abundance of research literature. Main focus areas of LDPC research have traditionally been low complexity encoding/decoding algorithms, analysis of performance in various channel and modulation scenarios, and code construction for such scenarios.
+
+Our project will be dealing with a number of key points in current LDPC research. After accumulating a thorough understanding of the motivation and theory behind LDPC codes, we will analyze variations on two commonly used decoding algorithms as well as investigate some of the more popular code design methods for different channels. More specifically we will be implementing simulations of the Belief Propagation Algorithm (BPA), which is also known as the Message-Passing Algorithm (MPA) or Sum-Product Algorithm (SPA)\cite{RyanNotes}, as well as the lower complexity Min-Sum decoder. We will give both quantitative (bit error rate comparisons) and subjective (coding and decoding an actual media file) examples of the efficacy of these algorithms. The final portion of our work will focus primarily on an approach to LDPC code design that utilizes extrinsic information transfer (EXIT) charts. EXIT charts were initially designed to analyze the rate of convergence of iterative decoders used with a number of graph-based coding schemes. We will demonstrate how these charts can be used to design optimized (with respect to convergence) codes for the symmetric binary erasure channel (BEC) as well as the binary memoryless symmetric channel (BSC). 
+
+The culmination of this work will be a brief in-class lecture covering the basics of LDPC as well as a presentation of all material covered in the project. We would like to show briefly some of the pros and cons of using LDPC codes versus alternate methods of coding and we will support this comparison with the results of our simulations. This material should provide a fairly complete overview of the concept of LDPC codes.  
+
+\nocite {RichUrbBook,MackayBook,CoverBook,Gallagher1962,Mackay1999,Tenbrink1999,Tenbrink2000,AshiKramTenb2004,BerGlaThi1993}
+
+\bibliographystyle{IEEEtran.bst}
+\bibliography{proposal}
+\end{document}

@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{LTHCC07}
+J.-W. Lee, A.~Tang, J.~Huang, M.~Chiang, and A.~R. Calderbank,
+  ``Reverse-engineering {MAC}: A non-cooperative game model,'' \emph{{IEEE} J.
+  Sel. Areas Commun.}, vol.~25, no.~6, pp. 1145--1147, Aug. 2007.
+
+\bibitem{XSR05}
+Y.~Xiao, X.~Shan, and Y.~Ren, ``Game theory models for {IEEE} 802.11 {DCF} in
+  wireless ad hoc networks,'' \emph{{IEEE} Commun. Mag.}, vol.~43, no.~3, pp.
+  S22--S26, Mar. 2005.
+
+\bibitem{LCC07}
+J.-W. Lee, M.~Chiang, and A.~R. Calderbank, ``Utility-optimal random-access
+  control,'' \emph{{IEEE} Trans. Wireless Commun.}, vol.~6, no.~7, pp.
+  2741--2751, July 2007.
+
+\bibitem{OsborneRubinstein_book}
+M.~J. Osborne and A.~Rubinstein, \emph{A Course in Game Theory}.\hskip 1em plus
+  0.5em minus 0.4em\relax Cambridge, MA: The MIT Press, 1994.
+
+\end{thebibliography}

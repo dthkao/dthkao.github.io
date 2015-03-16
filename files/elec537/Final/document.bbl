@@ -1,0 +1,62 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{LTHCC07}
+J.-W. Lee, A.~Tang, J.~Huang, M.~Chiang, and A.~R. Calderbank,
+  ``Reverse-engineering {MAC}: A non-cooperative game model,'' \emph{{IEEE} J.
+  Sel. Areas Commun.}, vol.~25, no.~6, pp. 1145--1147, Aug. 2007.
+
+\bibitem{FB04}
+Z.~Fang and B.~Bensaou, ``Fair bandwidth sharing algorithms based on game
+  theory frameworks for wireless ad-hoc networks,'' in \emph{Proc. {IEEE}
+  Infocom}, Mar. 2004, pp. 1284--1295.
+
+\bibitem{CLD06}
+L.~Chen, S.~H. Low, and J.~C. Doyle, ``Random access game and medium access
+  control design, (Caltech) Technical Report,'' Mar. 2006.
+
+\bibitem{BoydVan_book}
+S.~Boyd and L.~Vandenberghe, \emph{Convex Optimization}.\hskip 1em plus 0.5em
+  minus 0.4em\relax New York, NY, USA: Cambridge University Press, 2004.
+
+\bibitem{OsborneRubinstein_book}
+M.~J. Osborne and A.~Rubinstein, \emph{A Course in Game Theory}.\hskip 1em plus
+  0.5em minus 0.4em\relax Cambridge, MA: The MIT Press, 1994.
+
+\bibitem{CLD05}
+L.~Chen, S.~H. Low, and J.~C. Doyle, ``Joint congestion control and media
+  access control design for ad hoc wireless networks,'' Mar. 2005, pp.
+  2212--2222.
+
+\bibitem{NKGB00}
+T.~Nandagopal, T.~eun Kim, X.~Gao, and V.~Bharghavan, ``Achieving {MAC} layer
+  fairness in wireless packet networks,'' in \emph{Proc. {ACM} Mobicom}, 2000,
+  pp. 87--98.
+
+\bibitem{WK03}
+X.~Wang and K.~Kar, ``Distributed algorithms for max-min fair rate allocation
+  in aloha networks,'' in \emph{Proc. 41st Annual Allerton Conference}, 2003.
+
+\bibitem{LCC07}
+J.-W. Lee, M.~Chiang, and A.~R. Calderbank, ``Utility-optimal random-access
+  control,'' \emph{{IEEE} Trans. Wireless Commun.}, vol.~6, no.~7, pp.
+  2741--2751, July 2007.
+
+\end{thebibliography}

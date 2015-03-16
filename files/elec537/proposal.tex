@@ -1,0 +1,46 @@
+\documentclass[conference]{IEEEtran}
+\begin{document}
+
+\title{Forward-Engineering MAC: Energy Efficiency and Resource Accounting}
+
+\author{\authorblockN{Gareth Middleton and David T. Kao}
+}
+
+\maketitle
+
+\begin{abstract}
+We outline and provide motivation for a project examining medium access control among selfish users. This project extends previous work by first analyzing a new case of selfish nodes (users concerned with energy efficient transmission) and also analyzing two methods of exchanging the information necessary for a convergent access protocol.
+\end{abstract}
+
+
+\section{Background}
+The distributed nature of many medium access control (MAC) protocols is very amenable to game theoretic analysis \cite{LTHCC07,XSR05}. Recently, this has resulted in reverse engineering of the 802.11 MAC in a non-cooperative context \cite{LTHCC07}. By approximating the 802.11 distributed coordination function (DCF) as a time-slotted system where users have adjustable probabilities of transmission, the authors demonstrate that nodes are in fact taking part in a game where each has an individually defined payoff utility. Furthermore the authors propose game-playing dynamics that ensure convergence under mild conditions.
+
+Some extensions of this work have focused primarily on fairness and efficiency in the context of Network Utility Maximization \cite{LCC07}. By defining individual utility functions proportional to some network-wide utility and with the use of limited message passing, protocols were developed that can converge to game-theoretic optimal solutions.
+
+\section{Project Outline}
+Although fairness and Quality-of-Service are major fields of interest, our project will focus more on the selfish users in \cite{LTHCC07}. In particular, we intend to address two main concerns regarding the work. 
+\begin{enumerate}
+	\item {\bf Reward and Cost Functions: }
+		While the reward and cost functions were derived from the current 802.11 DCF specifications, these functions seem to be neither defined to optimize a particular objective nor intuitive.
+		\footnote{In fact, the particular definition of reward and cost derived could be seen as a loose attempt at enforcement of cooperation within the network.} 
+		We will thus examine the use of alternate definitions of reward and cost; specifically selfish definitions aiming at energy efficiency, motivated by the proliferation of low-power devices.
+	\item {\bf Accounting for Overhead: }
+		The original 802.11 DCF required no message passing, however the proposed dynamics require a great deal of network state information regarding other users actions. This information can be gained either through measurement of the channel or via the use of a dedicated control channel. We intend to examine the benefits of each method and the inherent tradeoff between overhead and rate of convergence.
+\end{enumerate}
+
+\section{Methodology}
+We intend to attack these concerns with a combination of analysis and simulation. Our assumptions regarding topology and collision model will remain essentially the same as in \cite{LTHCC07}, thus we will not address the hidden terminal problem and will also ignore any possible effects of physical capture or synchronization. 
+
+Our examination of alternative, energy-efficient definitions of reward and cost will require mathematical analysis in order to show existence and define characteristics of equilibrium points. It is also possible that, during this process, new more intuitive definitions will also become apparent. Using simulation methods, we will then compare these equilibrium points with those found in \cite{LTHCC07} under a number of metrics: aggregate/average throughput and energy efficiency (bits/Joule). 
+
+Our second topic will be addressed entirely via simulation. We will define both control channel based information exchange and channel measurement protocols and demonstrate the speed of convergence of each. In order to investigate the tradeoff between overhead and rate of convergence we will fix the system-wide capacity and allot a fraction of this capacity to the control channel. For simplicity we will assume that the control channel is scheduled ideally.
+
+\section{Expected Outcomes}
+For the first portion of our work, we expect that a utility definition geared towards energy efficiency will perform better than the current 802.11 MAC, but we are also interested on what impact this may have on the network throughput. 
+
+For the second we expect that as the portion of the system resources allocated to coordination falls, so too will the rate of convergence. What may be particularly interesting is if at some point a measurement based approach attains the same rate of convergence as the message passing approach, since the measurement based approach requires no overhead. Finally these results will be compared with the performance of the 802.11 MAC under similar assumptions.
+
+\bibliographystyle{IEEEtran}
+\bibliography{elec537proj}
+\end{document}
