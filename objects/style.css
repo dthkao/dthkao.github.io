@@ -23,7 +23,7 @@ body {
     padding-top:0px; 
     padding-bottom:0px; }
 
-a:link, a:active, a:visited {
+a {
     color:#101015;
     text-decoration:none; 
     border-bottom:1px solid rgba(0,160,0,1); }
