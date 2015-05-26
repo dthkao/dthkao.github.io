@@ -13,31 +13,29 @@
 <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
 <script type='text/javascript'>
 $(function() {
-    // Stick the #nav to the top of the window
-    var nav = $('#nav');
-    var navHomeY = nav.offset().top;
-    var isFixed = false;
-    var $w = $(window);
-    $w.scroll(function() {
-        var scrollTop = $w.scrollTop();
-        var shouldBeFixed = scrollTop > navHomeY;
-        if (shouldBeFixed && !isFixed) {
-            nav.css({
-                position: 'fixed',
-                top: 0,
-                left: nav.offset().left,
-                width: nav.width(),
-            });
-            isFixed = true;
-        }
-        else if (!shouldBeFixed && isFixed)
-        {
-            nav.css({
-                position: 'static'
-            });
-            isFixed = false;
-        }
-    });
+  // Stick the #nav to the top of the window
+  var nav = $('#nav');
+  var navHomeY = nav.offset().top;
+  var isFixed = false;
+  var $w = $(window);
+  $w.scroll(function() {
+	var scrollTop = $w.scrollTop();
+	var shouldBeFixed = scrollTop > navHomeY;
+	if (shouldBeFixed && !isFixed) {
+	  nav.css({
+		position: 'fixed',
+		top: 0,
+		left: nav.offset().left,
+		width: nav.width(),
+	  });
+	  isFixed = true;
+	}
+	else if (!shouldBeFixed && isFixed)
+	{
+	  nav.css({position: 'static'});
+	  isFixed = false;
+	}
+  });
 });
 </script></head>
 <body>
@@ -85,132 +83,135 @@ From February 2013 to February 2015, I was a postdoctoral research associate in 
 &nbsp;&nbsp;&nbsp;&nbsp;
 [<a href="files/kao-CV.pdf">curriculum vitae</a>]
 </p>
-</div><a name="work">
-<div id="pubs" class="block_9">
+  </div><a name="work">
+  <div id="pubs" class="block_9">
   <h2>PUBLICATIONS</h2>
   <h4>JOURNAL</h4>
   <dl> 
-	<!--<dt> <a href="http://arxiv.org/abs/">"UNNAMED"</a>, 
-		<dd>D. Kao 
-		<br>submitted to <i>IEEE Transactions on Information Theory</i>, December 2020. <br>&nbsp;
-	-->		
-  <dt> <a href="http://arxiv.org/abs/1504.06018">"Blind Index Coding"</a>, [preprint]
-	<dd>D. Kao, M. Maddah-Ali, & A.S. Avestimehr
+	<dt> <a href="http://arxiv.org/abs/1504.06018">"Blind Index Coding"</a>, [preprint]
+	  <dd>D. Kao, M. Maddah-Ali, & A.S. Avestimehr
 	  <!--<br>submitted to <i>IEEE Transactions on Information Theory</i>, June 2015. <br>&nbsp;-->
-	<br>&nbsp;
-  <dt> <a href="http://arxiv.org/abs/1504.04797">Rover-to-Orbiter Communication in Mars: Taking Advantage of the Varying Topology</a>, [preprint]
-	<dd>S. Li, D. Kao, & A.S. Avestimehr 
-	<br>submitted to <i>IEEE Transactions on Communications</i>, May 2015. 
-	<br>&nbsp;
-  <dt> <a href="http://arxiv.org/abs/1405.1091">Linear Degrees of Freedom of the MIMO X-Channel with Delayed CSIT</a>, [preprint]	
-	<dd>D. Kao & A.S. Avestimehr 
-	<br>submitted to <i>IEEE Transactions on Information Theory</i>, May 2014. <br>&nbsp;
-  <dt> <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6566151">Two-user interference channels with local views: On capacity regions of TDM-dominating policies</a>, 
-	<dd>D. Kao & A. Sabharwal 
-	<br><i>IEEE Transactions on Information Theory</i>, vol. 59, no. 11, pp. 7014--7040, Nov. 2013. <br>&nbsp;
+	  <br>&nbsp;
+	<dt> <a href="http://arxiv.org/abs/1504.04797">Rover-to-Orbiter Communication in Mars: Taking Advantage of the Varying Topology</a>, [preprint]
+	  <dd>S. Li, D. Kao, & A.S. Avestimehr 
+	  <br>submitted to <i>IEEE Transactions on Communications</i>, May 2015. 
+	  <br>&nbsp;
+	<dt> <a href="http://arxiv.org/abs/1405.1091">Linear Degrees of Freedom of the MIMO X-Channel with Delayed CSIT</a>, [preprint]	
+	  <dd>D. Kao & A.S. Avestimehr 
+	  <br>submitted to <i>IEEE Transactions on Information Theory</i>, May 2014. <br>&nbsp;
+	<dt> <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6566151">Two-user interference channels with local views: On capacity regions of TDM-dominating policies</a>, 
+	  <dd>D. Kao & A. Sabharwal 
+	  <br><i>IEEE Transactions on Information Theory</i>, vol. 59, no. 11, pp. 7014--7040, Nov. 2013. <br>&nbsp;
   </dl>
   <h4>CONFERENCE</h4>
   <dl> 
-  <dt><a href="http://">Blind index coding</a>, 
-	<dd>D. Kao, M. Maddah-Ali, & A.S. Avestimehr
-	<br><b>--- selected for presentation in semi-plenary session ---</b>. 
-	<br>to appear in <i>IEEE International Symposium on Information Theory (ISIT)</i>, 2015. 
-	<br>&nbsp;
-  <dt><a href="http://">Rover-to-orbiter communication in Mars: Taking advantage of the varying Topology</a>, 
-	<dd>S. Li, D. Kao, & A.S. Avestimehr
-	<br>to appear in <i>IEEE International Symposium on Information Theory (ISIT)</i>, 2015. 
-	<br>&nbsp;
-  <dt><a href="http://">Blind index coding over wireless channels: The value of repetition coding</a>, 
-	<dd>D. Kao, M. Maddah-Ali, & A.S. Avestimehr
-	<br>to appear in <i>IEEE International Conference on Communications (ICC)</i>, 2015. 
-	<br>&nbsp;
-  <dt><a href="http://">How to utilize caching to improve spectral efficiency in device-to-device wireless networks</a>, 
-	<dd>N. Naderializadeh, D. Kao, & A.S. Avestimehr
-	<br>in <i> Proc. 52nd Annual Allerton Conference on Communication, Control, and Computing</i>, 2014. 
-	<br>&nbsp;
-  <dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6875170">Align-and-Forward Relaying for Two-hop Erasure Broadcast Channels</a>, 
-	<dd>D. Kao, M. Maddah-Ali, & A.S. Avestimehr
-	<br>in <i> Proc. IEEE International Symposium on Information Theory (ISIT)</i>, 2014.
-	<br>[<a href="files/papers/2014isit-2hEBC_L.pdf">extended version</a>]
-	<br>&nbsp;
-  <dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6874856">Linear Degrees of Freedom of the MIMO X-Channel with Delayed CSIT</a>, 
-	<dd>D. Kao & A.S. Avestimehr
-	<br>in <i> Proc. IEEE International Symposium on Information Theory (ISIT)</i>, 2014. 
-	<br>&nbsp;
-  <dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6736884">How Local Can a Node's View Be and Still Guarantee Sum-Capacity in Interference Networks?</a>, 
-	<dd>D. Kao
-	<br>in <i> IEEE Global Conference on Signal and Information Processing (GlobalSIP)</i>, 2013. 
-	<br>&nbsp;
-  <dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6620232">An Upper Bound on the Capacity of Vector Dirty Paper with Unknown Spin & Stretch</a>, 
-	<dd>D. Kao & A. Sabharwal 
-	<br>in <i>Proc. IEEE International Symposium on Information Theory (ISIT)</i>, 2013. 
-	<br>&nbsp;
-  <dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6489333">Node Cooperation with Local Views in the Two-User Interference Channel</a>, 
-	<dd>D. Kao & A. Sabharwal 
-	<br>in <i>Proc. Asilomar Conference on Signals and Systems</i>, 2012. 
-	<br>&nbsp;
-  <dt> <a href="http://dl.acm.org/citation.cfm?id=2030643">Beamforming on Mobile Devices: A First Study</a>, 
-	<dd>H. Yu, L. Zhong, A. Sabharwal, & D. Kao 
-	<br>in <i>Proc. ACM MobiCom</i>, 2011.
-	<br>&nbsp;
-  <dt> <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5461911">An Axiomatic Theory of Fairness in Wireless Resource Allocation</a>, 
-	<dd>T. Lan, D. Kao, M. Chiang, & A. Sabharwal
-	<br>in <i>Proc. IEEE INFOCOM</i>, 2010. 
-	<br>[<a href="files/papers/2010-infocomTR.pdf">extended version</a>]
-	<br>&nbsp;
-  <dt> <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5062195">Impact of Network Topology Knowledge on Fairness: A Geometric Approach</a>,
-	<dd>D. Kao & A. Sabharwal 
-	<br>in <i>Proc. IEEE INFOCOM Mini-Conference</i>, 2009. 
-	<br>&nbsp;
+	<dt><a href="http://">Blind index coding</a>, 
+	  <dd>D. Kao, M. Maddah-Ali, & A.S. Avestimehr
+	  <br><b>--- selected for presentation in semi-plenary session ---</b>. 
+	  <br>to appear in <i>IEEE International Symposium on Information Theory (ISIT)</i>, 2015. 
+	  <br>&nbsp;
+	<dt><a href="http://">Rover-to-orbiter communication in Mars: Taking advantage of the varying Topology</a>, 
+	  <dd>S. Li, D. Kao, & A.S. Avestimehr
+	  <br>to appear in <i>IEEE International Symposium on Information Theory (ISIT)</i>, 2015. 
+	  <br>&nbsp;
+	<dt><a href="http://">Blind index coding over wireless channels: The value of repetition coding</a>, 
+	  <dd>D. Kao, M. Maddah-Ali, & A.S. Avestimehr
+	  <br>to appear in <i>IEEE International Conference on Communications (ICC)</i>, 2015. 
+	  <br>&nbsp;
+	<dt><a href="http://">How to utilize caching to improve spectral efficiency in device-to-device wireless networks</a>, 
+	  <dd>N. Naderializadeh, D. Kao, & A.S. Avestimehr
+	  <br>in <i> Proc. 52nd Annual Allerton Conference on Communication, Control, and Computing</i>, 2014. 
+	  <br>&nbsp;
+	<dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6875170">Align-and-Forward Relaying for Two-hop Erasure Broadcast Channels</a>, 
+	  <dd>D. Kao, M. Maddah-Ali, & A.S. Avestimehr
+	  <br>in <i> Proc. IEEE International Symposium on Information Theory (ISIT)</i>, 2014.
+	  <br>[<a href="files/papers/2014isit-2hEBC_L.pdf">extended version</a>]
+	  <br>&nbsp;
+	<dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6874856">Linear Degrees of Freedom of the MIMO X-Channel with Delayed CSIT</a>, 
+	  <dd>D. Kao & A.S. Avestimehr
+	  <br>in <i> Proc. IEEE International Symposium on Information Theory (ISIT)</i>, 2014. 
+	  <br>&nbsp;
+	<dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6736884">How Local Can a Node's View Be and Still Guarantee Sum-Capacity in Interference Networks?</a>, 
+	  <dd>D. Kao
+	  <br>in <i> IEEE Global Conference on Signal and Information Processing (GlobalSIP)</i>, 2013. 
+	  <br>&nbsp;
+	<dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6620232">An Upper Bound on the Capacity of Vector Dirty Paper with Unknown Spin & Stretch</a>, 
+	  <dd>D. Kao & A. Sabharwal 
+	  <br>in <i>Proc. IEEE International Symposium on Information Theory (ISIT)</i>, 2013. 
+	  <br>&nbsp;
+	<dt><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6489333">Node Cooperation with Local Views in the Two-User Interference Channel</a>, 
+	  <dd>D. Kao & A. Sabharwal 
+	  <br>in <i>Proc. Asilomar Conference on Signals and Systems</i>, 2012. 
+	  <br>&nbsp;
+	<dt> <a href="http://dl.acm.org/citation.cfm?id=2030643">Beamforming on Mobile Devices: A First Study</a>, 
+	  <dd>H. Yu, L. Zhong, A. Sabharwal, & D. Kao 
+	  <br>in <i>Proc. ACM MobiCom</i>, 2011.
+	  <br>&nbsp;
+	<dt> <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5461911">An Axiomatic Theory of Fairness in Wireless Resource Allocation</a>, 
+	  <dd>T. Lan, D. Kao, M. Chiang, & A. Sabharwal
+	  <br>in <i>Proc. IEEE INFOCOM</i>, 2010. 
+	  <br>[<a href="files/papers/2010-infocomTR.pdf">extended version</a>]
+	  <br>&nbsp;
+	<dt> <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5062195">Impact of Network Topology Knowledge on Fairness: A Geometric Approach</a>,
+	  <dd>D. Kao & A. Sabharwal 
+	  <br>in <i>Proc. IEEE INFOCOM Mini-Conference</i>, 2009. 
+	  <br>&nbsp;
   </dl>
-</div>
-<div id="theses" class="block_9">
-        <h2>THESES</h2>
-        <dl>
-            <dt><a href="files/kao-phd.pdf">A matter of perspective: Reliable communication and coping with interference with only local views</a>, 
-            <dd>Ph.D Thesis, 2012<br>&nbsp;
-            <dt><a href="files/kao-ms.pdf">On fairness in wireless networks under channel uncertainty</a>,
-            <dd>M.S. Thesis, 2008<br>&nbsp;
-        </dl>
-    </div>
-    <div id="space" class="block_3">
-    </div>
-    <div id="pres" class="block_9">
-    <h2>PRESENTATIONS/POSTERS/DEMOS</h2>
-	<dl> 
-        <dt>On Capacity Regions of Interference Channels with Mismatched Local Views,
-		    <dd> D. Kao and A. Sabharwal, poster at Winedale Workshop, 2011.<br>&nbsp;
-		<dt>Beamforming on Mobile Devices: A First Study,
-		    <dd> H. Yu, L. Zhong, A. Sabharwal, and D. Kao, demo at ACM Mobicom, 2011.<br>&nbsp;
-		<dt>How Simple Approaches Can Optimize Scalable Interference Networks,
-		    <dd> D. Kao and A. Sabharwal, presentation at ACM S3 Workshop, 2011.<br>&nbsp;
-		<dt>Impact of Network Topology Knowledge on Fairness: A Geometric Approach,
-		    <dd> D. Kao and A. Sabharwal, poster presented at IEEE School of Information Theory, 2009.<br>&nbsp;
-		<dt>An Axiomatic Theory of Fairness,
-            <dd> T. Lan, D. Kao, M. Chiang, and A. Sabharwal, presented at the Workshop on The Economics of Networks, Systems, and Computation, NetEcon, 2009.<br>&nbsp;
-        <dt> Distributed Spectrum Sharing via Graph Coloring,
-            <dd> D. Kao and A. Sabharwal, poster presented at IEEE Communication Theory Workshop, CTW, 2007.
+  </div>
+  <div id="theses" class="block_9">
+	<h2>THESES</h2>
+	<dl>
+	  <dt><a href="files/kao-phd.pdf">A matter of perspective: Reliable communication and coping with interference with only local views</a>, 
+		<dd>Ph.D Thesis, 2012<br>&nbsp;
+	  <dt><a href="files/kao-ms.pdf">On fairness in wireless networks under channel uncertainty</a>,
+		<dd>M.S. Thesis, 2008<br>&nbsp;
 	</dl>
-
-    </div>
-    <div id="space" class="block_9">
-    </div><a name="play">
-    <div id="play" class="block_3">
-        <h2>PLAY</h2>
-            <ul>
-                <li><a href="http://www.highfructosecorn.com/" target="_blank">Photography</a>                
-                <li><a href="http://www.puzzlethecorgi.com/" target="_blank">PZZLxSPRK</a> 
-                <li><a href="files/brain/axial.mpg">Axial</a>, <a href="files/brain/coronal.mpg">coronal</a>, & <a href="files/brain/sagittal.mpg">sagittal</a> grey matter
-                <li>I used to <a href="http://www.athlinks.com/myresults/61784316/David-Kao.aspx" target="_blank">race</a>.
-	</ul>
-    </div>
+  </div>
+  <div id="space" class="block_3">
+  </div>
+  <div id="pres" class="block_9">
+  <h2>PRESENTATIONS/POSTERS/DEMOS</h2>
+  <dl> 
+	<dt>On Capacity Regions of Interference Channels with Mismatched Local Views,
+	  <dd> D. Kao and A. Sabharwal, poster at Winedale Workshop, 2011.<br>&nbsp;
+	<dt>Beamforming on Mobile Devices: A First Study,
+	  <dd> H. Yu, L. Zhong, A. Sabharwal, and D. Kao, demo at ACM Mobicom, 2011.<br>&nbsp;
+	<dt>How Simple Approaches Can Optimize Scalable Interference Networks,
+	  <dd> D. Kao and A. Sabharwal, presentation at ACM S3 Workshop, 2011.<br>&nbsp;
+	<dt>Impact of Network Topology Knowledge on Fairness: A Geometric Approach,
+	  <dd> D. Kao and A. Sabharwal, poster presented at IEEE School of Information Theory, 2009.<br>&nbsp;
+	<dt>An Axiomatic Theory of Fairness,
+	  <dd> T. Lan, D. Kao, M. Chiang, and A. Sabharwal, presented at the Workshop on The Economics of Networks, Systems, and Computation, NetEcon, 2009.<br>&nbsp;
+	<dt> Distributed Spectrum Sharing via Graph Coloring,
+	  <dd> D. Kao and A. Sabharwal, poster presented at IEEE Communication Theory Workshop, CTW, 2007.
+  </dl>
+  </div>
+  <div id="space" class="block_9">
+  </div><a name="play">
+  <div id="play" class="block_3">
+  <h2>PLAY</h2>
+  <ul>
+	<li><a href="http://www.highfructosecorn.com/" target="_blank">Photography</a>                
+	<li><a href="http://www.puzzlethecorgi.com/" target="_blank">PZZLxSPRK</a> 
+	<li><a href="files/brain/axial.mpg">Axial</a>, <a href="files/brain/coronal.mpg">coronal</a>, & <a href="files/brain/sagittal.mpg">sagittal</a> grey matter
+	<li>I used to <a href="http://www.athlinks.com/myresults/61784316/David-Kao.aspx" target="_blank">race</a>.
+  </ul>
+  </div>
 </div>
 </center>
 
 <!-- Manual update notice -->
-<font size="-3" color=#666688>&nbsp;updated 27-APR-2015</font>
+<font size="-3" color=#666688>&nbsp;updated 27-MAY-2015</font>
 
 <!-- Start of Google Analytics Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-1286048-2', 'auto');
+  ga('send', 'pageview');
+</script>
 <!-- End of Google Analytics Code -->
 
 <!-- Start of StatCounter Code -->
